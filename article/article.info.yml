@@ -1,0 +1,5 @@
+name: Article Block
+type: module
+description: Defines a Custom Module
+core_version_requirement: ^8 ||^9
+package: Rishabh Custom
