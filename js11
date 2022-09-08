@@ -1,0 +1,8 @@
+function gettingList(){
+var selectItem = document.getElementById("edit-field-department-target-id").value;
+var displayPrice = selectItem.options[selectItem.selectedIndex].text;
+var makup = document.querySelector("div h2#department");
+
+document.getElementById("department").value=displayPrice;
+}
+gettingList();
