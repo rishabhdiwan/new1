@@ -6,3 +6,12 @@ var makup = document.querySelector("div h2#department");
 document.getElementById("department").value=displayPrice;
 }
 gettingList();
+
+
+jQuery("#edit-field-department-target-id").on("change",function(){
+    //Getting Value
+    var selValue = jQuery("#edit-field-department-target-id").text();
+    //Setting Value
+    jQuery(".rishabh").val(selValue);
+alert(selValue);
+});
