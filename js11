@@ -15,3 +15,12 @@ jQuery("#edit-field-department-target-id").on("change",function(){
     jQuery(".rishabh").val(selValue);
 alert(selValue);
 });
+
+
+    jQuery( document ).ajaxComplete(function() {
+      jQuery('select > option').not(':first').each(function() {
+        if (jQuery(this).prop('selected') == true) {
+        jQuery('.f-alfaisal-most-visited-faculty-profiles-items').append('<div class="header">Department of '+jQuery(this).text()+'</div>');
+        }
+      });
+     });
